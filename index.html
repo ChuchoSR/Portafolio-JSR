@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/00b912df0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Portafolio Jesús Sierra</title>
+</head>
+<body>
+    <nav>
+        <h1>Jesús Sierra</h1>
+        <ul class="navegation">
+            <li><a href="#about" class="nav-link">Acerca de mi</a></li>
+            <li><a href="#skills" class="nav-link">Habilidades</a></li>
+            <li><a href="#projects" class="nav-link">Proyectos</a></li>
+            <li><a href="#contacto" class="nav-link">Contactame</a></li>
+        </ul>
+        <button class= "btn-menu" id="btn-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+    <progress id="progressBar" value="0" max="100"></progress>
+
+    <section class="about" id="about">
+        <img
+            src="./assets/image/foto.png"
+            alt="logo"
+            loading="lazy"
+            class="about-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-titulo">Acerca de mi</h2>
+            <p class="bio-texto">
+            Hola, que gusto que estés acá. Mi nombre es Jesús Sierra, soy ingeniero de Computación y me desempeño como web developer Junior.
+            Me gusta los desafios que el mundo de la programación ofrece, día a día es una nueva oportunidad de aprendizaje. Me desempeño como Frontend developer.
+            </p>
+        </div>
+    </section>
+
+    <section class="more-about">
+        <h2>Más sobre mí</h2>
+        <p>
+            Obtuve mi titulo en Ingenieria de Computación el año 2017, egresado de la Universidad Dr. José Gregorio Hernandez, situada en Maracaibo, Zulia, Venezuela. Resido en Chile desde el 2018. He tenido experiencias en pequeños proyectos basados en HTML, CSS, Javascript. Actualmente estoy inscrito en la escuela de programación de Platzi, esto, con el fin de capacitarme como frontend developer.
+        </p>
+        <p>
+            Acá podrás visualizar pequeños proyectos realizados por mi con las tecnologias anteriormente mencionadas.
+        </p>
+        <p>
+            Soy una persona con ambición de crecer en el rubro y aprender al máximo de cada oportunidad que se me otorgue.
+        </p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="h2Skills"> Las tecnolgías que manejo son:</h2>
+
+        <div class="skills-container">
+            <div class="first-set animate__animated animate__pulse">
+                <img 
+                    src="./assets/image/icons8-html-5.svg" 
+                    alt="html-logo"
+                    loading= "lazy"
+                    class="icon icon-card"
+                />
+
+                <img 
+                    src="./assets/image/icons8-css3.svg" 
+                    alt="html-logo"
+                    loading= "lazy"
+                    class="icon icon-card"
+                />
+
+                <img 
+                    src="./assets/image/icons8-javascript.svg" 
+                    alt="html-logo"
+                    loading= "lazy"
+                    class="icon icon-card"
+                />
+            </div>
+
+            <div class="second-set animate__animated animate__pulse">
+                <img 
+                    src="./assets/image/icons8-react-native.svg" 
+                    alt="html-logo"
+                    loading= "lazy"
+                    class="icon icon-card"
+                />
+
+                <img 
+                    src="./assets/image/icons8-git.svg" 
+                    alt="html-logo"
+                    loading= "lazy"
+                    class="icon icon-card"
+                />
+                <img 
+                    src="./assets/image/icons8-bootstrap.svg" 
+                    alt="html-logo"
+                    loading= "lazy"
+                    class="icon icon-card"
+                />
+
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Algunos de mis proyectos recientes</h2>
+        <div class="projects-container">
+
+            <div class="projects-container projects-card">
+                <a href="https://mokepon-game.netlify.app/" target="_blank" class="project-link">Echale un vistazo!</a>
+                <img
+                    src="./assets/image/mokepon.png"
+                    alt="rastreador-de-gastos"
+                    loading="lazy"
+                    class="project-pic"
+                />
+                <h3 class="projects-name">Mokepon</h3>
+                <p class="projects-details">
+                    Un juego donde tendrás que elegir a tu mascota (MOKEPON), moverte por el mapa y batallar con el enemigo con el que colisiones.
+                </p>
+            </div>
+
+            <div class="projects-container projects-card form">
+                <a href="https://single-form-js.netlify.app/" target="_blank" class="project-link">Echale un vistazo!</a>
+                <img
+                    src="assets/image/single-form.png"
+                    alt="netflic-clone"
+                    loading="lazy"
+                    class="project-pic"
+                />
+                <h3 class="projects-name">Formulario simple</h3>
+                <p class="projects-details">
+                    Este fué un pequeño formulario que hice al hacer un tutorial donde mostrara algo simple que habia aprendido durante los primeros cursos de Platzi.
+                </p>
+            </div>
+
+            <div class="projects-container projects-card">
+                <a href="https://card-responsive-js.netlify.app/" target="_blank" class="project-link">Echale un vistazo!</a>
+                <img
+                    src="assets/image/product-card.png"
+                    alt="greeny-earth"
+                    loading="lazy"
+                    class="project-pic"
+                />
+                <h3 class="projects-name">Tarjeta responsive</h3>
+                <p class="projects-details">
+                    Esta es una tarjeta hecha con HTML y CSS. Fué la primera que hice, tomada desde la lista de desafios de Frontend Mentor
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contactame</h2>
+        <div class="formulario-contacto-contenedor">
+
+            <div class="formulario-contacto">
+                <form action="https://formspree.io/f/mnqkzvwj" method="POST">
+                <div class="control-formulario">
+                    <label for="name">Nombre</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="sender-name"
+                        placeholder="Escriba su nombre"
+                        class="input-field"
+                        required
+                    />
+                </div>
+
+                <div class="control-formulario">
+                    <label for="email">Correo Electrónico</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="sender-email"
+                        placeholder="Ingreso tu correo electrónico"
+                        class="input-field"
+                        required
+                    />
+                </div>
+
+                <div class="control-formulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        cols="60"
+                        rows="10"
+                        placeholder="Escribe tu mensaje"
+                        name="mensaje"
+                        class="input-field"
+                        required
+                    >
+                    </textarea>
+                </div>
+
+                <input
+                    type="submit"
+                    value="Enviar"
+                    id="submit-btn"
+                    class="submit-btn"
+                />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="sociales">
+        <a href="https://www.facebook.com/xavier.asociados?mibextid=ZbWKwL" target="_blank">
+        <img
+            src="assets/icons/facebook-f (1).svg"
+            alt="Facebook"
+            loading="lazy"
+            class="socicon face"
+        />
+        </a>
+        
+        <a href="https://instagram.com/chucho.jsr?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+            <img
+                src="assets/icons/instagram (1).svg"
+                alt="Instagram"
+                loading="lazy"
+                class="socicon"
+            />
+        </a>
+
+        <a href="https://www.linkedin.com/in/jesus-sierra-729356135" target="_blank">
+            <img
+                src="assets/icons/linkedin-in.svg"
+                alt="Linkedin"
+                loading="lazy"
+                class="socicon"
+            />
+        </a>
+
+        <a href="https://github.com/ChuchoSR" target="_blank">
+            <img 
+                src="./assets/icons/github.svg" 
+                alt="Github" 
+                class="socicon"
+            />
+    </div>
+        </a>
+    <footer>
+        <p class="copy">&copy; Copyright 2023</p>
+        <p class="copy">
+            Hecho por Jesús Sierra
+        </p>
+    </footer>
+
+    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba">
+        <img
+            src="./assets/icons/flecha.gif"
+            class="sociconUp up-arrow"
+            alt="desplazarse-hacia-arriba"
+        />
+    </i>
+<script src="./index.js"></script>
+</body>
+</html>
