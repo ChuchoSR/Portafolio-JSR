@@ -34,6 +34,9 @@ ul {
 a {
     text-decoration: none;
     color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a:hover {
@@ -256,6 +259,15 @@ progress[value]::-webkit-progress-value {
     height: 348px;
 }
 
+.formu {
+    padding-top: 22px;
+}
+
+.formul {
+    height: 200px;
+    width: 370px;
+}
+
 .contacto {
     margin-top: 2rem;
 }
@@ -294,6 +306,10 @@ progress[value]::-webkit-progress-value {
     border: 2px outset var(--primary-color);
     font-size: 0.9rem;
     outline: none;
+}
+
+.input-field {
+    margin: 6px 0 6px 0;
 }
 
 .submit-btn {
@@ -357,6 +373,11 @@ footer {
     height: 3rem;
     border-radius: 50%;
 } 
+
+.formul {
+    height: 134px;
+    width: 214px;
+}
 
 @media screen and (max-width: 720px) {
     nav {
@@ -440,6 +461,15 @@ footer {
     .formulario-contacto-contenedor {
         max-width: 24rem;
     }
+
+    .input-field {
+        margin: 6px 0 6px 0;
+    }
+
+    .formul {
+        height: 134px;
+        width: 214px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -466,6 +496,10 @@ footer {
 
     .socicon {
         padding-right: 11px;
+    }
+
+    .input-field {
+        margin: 6px 0 6px 0;
     }
 }
     
