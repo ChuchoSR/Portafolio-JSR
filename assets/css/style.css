@@ -413,10 +413,12 @@ footer {
 .dark-mode .projects-container a:hover{
     transition: .5s;
     color: #0d2e39;
+    transition: .5s;
 }
 
 .dark-mode .projects-name{
     color: #0d2e39;
+    transition: .5s;
 }
 
 .check {
