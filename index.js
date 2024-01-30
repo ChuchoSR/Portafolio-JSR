@@ -1,4 +1,4 @@
-//Boton de desplazamiento hacia arriba
+//Boton de desplazamiento hacia arriba.
 const subir = document.getElementById('desplazarse-hacia-arriba');
 
 subir.addEventListener("click", () => {
@@ -9,7 +9,7 @@ subir.addEventListener("click", () => {
     })
 })
 
-//Barra de progreso
+//Barra de progreso.
 const progressBar = document.getElementById('progressBar');
 const body = document.body;
 
@@ -20,7 +20,7 @@ function actualizarProgreso () {
 
     progressBar.value = scrollPorcentaje;
 
-    //visibilidad de la barra
+    //visibilidad de la barra.
 
     if (scrollTop > 0) {
         progressBar.style.display = 'block'
@@ -29,13 +29,13 @@ function actualizarProgreso () {
     }
 }
 
-//Actualizacion de barra de progreso cuando se realiza el desplazamiento
+//Actualizacion de barra de progreso cuando se realiza el desplazamiento.
 window.addEventListener('scroll', actualizarProgreso);
 
-//Actualiza la barra de progreso cuando la página se carga inicialmente
+//Actualiza la barra de progreso cuando la página se carga inicialmente.
 window.addEventListener('load', actualizarProgreso);
 
-//boton de menu en responsive
+//boton de menu en responsive.
 
 const menu = document.getElementById('btn-menu');
 const ul = document.querySelector('nav ul');
@@ -45,7 +45,7 @@ menu.addEventListener("click", () => {
     ul.classList.toggle('show');
 });
 
-//Para que se cierre el menu al seleccionar una seccion
+//Para que se cierre el menu al seleccionar una seccion.
 
 const navLink = document.querySelectorAll(".nav-link");
 
@@ -55,3 +55,22 @@ navLink.forEach((link) =>
     })
 
 )
+
+const darkMode = document.getElementById('check');
+
+darkMode.addEventListener('change', function()  {
+    if(this.checked){
+        activateDarkMode();
+    }else{
+        desactivarDarkMode();
+    }
+});
+
+function activateDarkMode() {
+    document.body.classList.add('dark-mode');
+}
+
+function desactivarDarkMode() {
+    document.body.classList.remove('dark-mode');
+}
+
