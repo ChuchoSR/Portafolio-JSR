@@ -609,6 +609,10 @@ footer {
         margin-top: 1rem;
     }
 
+    .animate__animated{
+        width: 18rem;
+    }
+
     .more-about {
         margin-top: 2rem;
         padding: 1rem 3.5rem;
