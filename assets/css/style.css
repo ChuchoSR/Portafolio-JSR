@@ -444,6 +444,11 @@ footer {
     transition: .5s;
 }
 
+.dark-mode nav a:hover {
+    color: var(--dark-mode);
+    transition: var(--transition);
+}
+
 .dark-mode .projects-name{
     color: #0d2e39;
     transition: .5s;
@@ -598,6 +603,8 @@ footer {
         margin-top: -4rem;
         flex-direction: column;
         gap: 0;
+        justify-content: center;
+
     }
 
     .about img {
