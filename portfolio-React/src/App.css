@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+  font-family: myFont;
+  src: url(./assets/fonts/ARCADECLASSIC.TTF);
+}
+
+
+#root {
+  max-width: 100%;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #a2af93 !important;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container, .row {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* /////////////////////////////////////////////////////BARRA DE NAVEGACION /////////////////////////////////// */
+
+.navbar{
+  /* background-color: #151515; */
+  /* display: flex; */
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  animation: pixel-appear 1s steps(6, end);
+  position: -webkit-sticky;
+  position: sticky !important; 
+  top: 0; 
+  z-index: 1000;
+}
+
+.navbar-expand{
+  position: -webkit-sticky !important;
+  position: sticky !important;
+}
+
+.navbar-container{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  
+}
+
+.collapse{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-container .link{
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.7rem;
+  color: #a2af93;
+  margin-left: 15px;
+}
+
+.navbar-brand{
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
+  /* animation: glitch 0.5s infinite; */
+}
+
+.navbar-container .link:hover {
+  color: #4f43ae !important;
+  cursor: pointer;
+  text-shadow: 0 0 5px #fff, 0 0 10px #0ff;
+  animation: glitch 0.3s infinite;
+}
+
+/* ///////////////////////////BARRA DE PROGRESO/////////////////////////// */
+
+.progress{
+  height: 0.4rem !important;
+  background-color: #4f43ae !important;
+}
+
+/* ////////////////////////LINKS-SOCIAL'S/////////////////// */
+
+.social-medias{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+  gap: 18px;
+  border: 4px solid #4f43ae;
+  padding: 8px;
+  border-radius: 6px;
+  align-items: center;
+  animation: glitch 0.3s infinite;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  
+}
+
+.social-icon{
+  width: 50px;
+  
+}
+
+/* /////////////////////////////////////////// ACERCA DE MI ////////////////////////// */
+
+.about-container{
+  margin-top: 160px;
+  /* display: flex;
+  align-items: center; */
+  padding: 0 15px;
+}
+
+.img-me{
+  background-color: #151515;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.about-text{
+  border: solid 4px #151515;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+  /* animation: pixel-appear 1s steps(6, end); */
+  animation: slide-in-right 1s steps(10, end);
+}
+
+
+.about-text h2{
+  font-family: "Press Start 2P", serif;
+  font-size: 1.3rem;
+  animation: glitch 0.5s infinite;
+}
+
+.about-container p{
+  text-align: start;
+  font-size: 1rem;
+  font-family: "Roboto Mono", serif;
+}
+
+.pixel-container {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  background: #000; /* Fondo detrás del borde */
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+  /* animation: pixel-appear 1s steps(6, end); */
+  animation: slide-in-left 1s steps(10, end);
+  border-radius: 6px;
+}
+
+.pixel-container img{
+  border-radius: 6px;
+}
+
+.pixel-container::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background: transparent;
+  z-index: -1; /* Manda el borde detrás de la imagen */
+  
+}
+
+/* ////////////////////////////////////MORE ABOUT ME ////////////////////////////////////// */
+
+.more-about-container{
+  background-color: #212529;
+  color: #fdfdfd;
+  text-align: center;
+  height: auto;
+  margin: 0 15px;
+  /* width: 100%; */
+  padding: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.more-about-container h2{
+  font-family: "Press Start 2P", serif;
+  font-size: 1.3rem;
+  animation: glitch 0.5s infinite;
+}
+
+.more-about-container p{
+  font-size: 1rem;
+  margin-top: 20px;
+  font-family: "Roboto Mono", serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* //////////////////////////////// SKILLS //////////////////////////////////// */
+
+.skills-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.skills-container h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #151515 !important;
+  font-family: "Press Start 2P", serif;
+  font-size: 1.3rem;
+  animation: glitch 0.5s infinite;
+}
+
+.icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.icon-wrapper img {
+  width: 100px; 
+  height: auto;
+  background-color: #151515;
+  border-radius: 4px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+  /* animation: glitch 0.5s infinite; */
+}
+
+/* /////////////////////////////////////////PROJECTS////////////////////////////////////////////////// */
+
+.projects-container{
+  background-color: #212529;
+  color: #fdfdfd;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-container p{
+  font-size: 1rem;
+  font-family: "Roboto Mono", serif;
+}
+
+.project-carousel{
+  width: 1200px;
+  border-radius: 4px;
+  border: solid 2px #a2af93;
+  margin: 20px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption h3{
+  font-family: myFont;
+}
+
+.projects-container h2{
+  margin-top: 40px;
+  font-size: 1.3rem;
+  font-family: "Press Start 2P", serif;
+  animation: glitch 0.5s infinite;
+}
+
+.project-carousel .carousel-item img { 
+  width: 100%; 
+  height: 300px; 
+  object-fit: cover; 
+}
+
+/* ///////////////////////////CONTACT/////////////////////// */
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-container h2{
+  font-size: 1.3rem;
+  font-family: "Press Start 2P", serif;
+  animation: glitch 0.5s infinite;
+}
+
+.form-contact{
+  width: 40rem;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 4px;
+  border: solid 4px #151515;
+  /* background-color: #151515; */
+  color: #151515;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5)
+}
+
+.form-label{
+  font-family: "Roboto Mono", serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.form-control{
+  border-radius: 4px !important;
+  font-family: myFont;
+  background-color: transparent !important;
+  border: solid 2px #151515 !important;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5)
+}
+
+.form-control:focus{
+  border: solid 2px #4f43ae;
+  border-color: #4f43ae !important;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5) !important;
+  background-color: #fff !important;
+}
+
+.form-contact button{
+  background: transparent;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	box-sizing: border-box;
+	color: #151515;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3rem;
+	margin: 0 auto;
+	min-width: 200px;
+	padding: .5rem;
+	text-transform: uppercase;
+	width: 5rem;
+  font-family: "Press Start 2P", serif;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+		background: #818b75;
+	}
+}
+
+/* /////////////////////////////////FOOTER/////////////////////////////////////////// */
+
+.footer-container{
+  margin-top: 40px;
+  color: #fff;
+}
+
+.text-center{
+  background-color: #212529 !important;
+  font-size: 1rem;
+  font-family: "Roboto Mono", serif;
+}
+
+.text-center p{
+  font-family: "Press Start 2P", serif;
+  animation: glitch 0.5s infinite;
+}
+
+/* //////////////////////////////MEDIA QUERIES///////////////////////////////////////// */
+
+@media (min-width: 768px) {
+  .icon-wrapper img {
+    width: 200px; 
+  }
+
+  .project-carousel .carousel-item img { 
+    height: 600px; 
+    width: auto;
+    object-fit:contain;
+  }
+
+/*   .collapse{
+    display: flex;
+    justify-content: flex-start;
+  } */
+}
+
+@media (max-width: 768px) { 
+/*   /////////////////navbar//////////////////////////////////// */
+
+  
+  .collapse{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .navbar-container .link {
+    font-size: 0.6rem; 
+    margin-left: 10px; 
+  }
+
+/*   //////////////////////////////////SOCIAL/////////////////////////////////////// */
+
+.social-medias{
+  max-width: 60px;
+}
+
+.social-icon{
+  max-width: 40px;
+}
+
+/*   ////////////////////////////About////////////////////////////////// */
+  .about-text { 
+    padding: 1rem; 
+  } 
+  
+  .about-container{
+    margin-top: 50px;
+  }
+
+  .align-items-center{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .pixel-container{
+    max-height: 400;
+  }
+
+  .col-container{
+    display: contents;
+  }
+
+  .pixel-container img{
+    width: 100% !important;
+    max-height: 380px;
+  }
+
+  .about-text h2 { 
+    font-size: 1.1rem; 
+  } 
+  
+  .about-container p { 
+    font-size: 0.9rem; 
+  }
+  
+  .about-container, .skills-container, .projects-container 
+    { padding: 10px; 
+  } 
+  
+/* ///////////////////////////////MORE ABOUT//////////////////////////////////// */
+
+/*   .pixel-container img { 
+    width: 80%; 
+  }  */
+
+  .more-about-container { 
+    padding: 15px; 
+    margin: 0 10px; 
+  } 
+  
+  .more-about-container h2 { 
+    font-size: 1.1rem; 
+  } 
+  
+  .more-about-container p { 
+    font-size: 0.9rem; 
+    text-align: left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+  
+/*   ////////////////////////////PROJECTS////////////////////////////// */
+
+  .project-carousel { 
+    width: 100%; 
+  } 
+  
+  .form-contact { 
+    width: 90%; 
+  } 
+  
+  .icon-wrapper img { 
+    width: 80px; 
+  }
+  
+  .carousel-caption p{
+    display: none;
+  }
+}
+
+
+/* /////////////////////////////// ANIMACIONES///////////////////////////////////// */
+
+@keyframes pixel-appear { 
+  0% { opacity: 0; transform: scale(0); } 
+  20% { opacity: 0.2; transform: scale(0.2); } 
+  40% { opacity: 0.4; transform: scale(0.4); } 
+  60% { opacity: 0.6; transform: scale(0.6); } 
+  80% { opacity: 0.8; transform: scale(0.8); } 
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes glitch {
+  0% { transform: translateX(1px); }
+  25% { transform: translateX(-1px); }
+  50% { transform: translateX(1px); }
+  100% { transform: translateX(-1px); }
+}
+@keyframes slide-in-left { 
+  from { 
+    transform: translateX(-100%);
+    opacity: 0; 
+  } 
+  to { 
+    transform: translateX(0); 
+    opacity: 1; 
+  } 
+} 
+
+@keyframes slide-in-right { 
+  from { 
+    transform: translateX(100%);
+    opacity: 0; 
+  } 
+  to { 
+    transform: translateX(0); 
+    opacity: 1; 
+  } 
+}
+
+@keyframes slide-out-left { 
+  from { 
+    transform: translateX(0);
+    opacity: 1; 
+  } 
+  to { 
+    transform: translateX(-100%); 
+    opacity: 0; 
+  } 
+}
+
+@keyframes slide-out-right { 
+  from { 
+    transform: translateX(0); 
+    opacity: 1; 
+  } 
+  to { 
+    transform: translateX(100%); 
+    opacity: 0; 
+  } 
+}
+
+.animate-slide-in-left { 
+  animation: slide-in-left 1s forwards;
+} 
+
+.animate-slide-in-right { 
+  animation: slide-in-right 1s forwards; 
+} 
+
+.animate-slide-out-left { 
+  animation: slide-out-left 1s forwards; 
+} 
+
+.animate-slide-out-right { 
+  animation: slide-out-right 1s forwards; 
+}
