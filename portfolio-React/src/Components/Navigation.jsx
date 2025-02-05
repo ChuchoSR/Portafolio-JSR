@@ -1,12 +1,12 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+
 
 const Navigation = () => {
 
-  const handleScroll = (id) => {
+  /* const handleScroll = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
+  }; */
   
   return (
     <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="navbar">

@@ -8,11 +8,11 @@ const Contact = () => {
                 <Form className='form-contact' action="https://formspree.io/f/mnqkzvwj" method="POST">
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label>Nombre</Form.Label>
-                        <Form.Control type="name" placeholder="Escribe tu nombre" />
+                        <Form.Control type="name" name='name' placeholder="Escribe tu nombre" required/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label>Correo electrónico</Form.Label>
-                        <Form.Control type="email" placeholder="correo@example.com" />
+                        <Form.Control type="email" name='email' placeholder="correo@example.com" required/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Déjame un mensaje</Form.Label>

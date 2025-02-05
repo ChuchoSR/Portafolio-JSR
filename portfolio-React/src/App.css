@@ -115,6 +115,41 @@ body{
   
 }
 
+/* //////////////////////////////////////dark-mode///////////////////////////// */
+/* App.css */
+.dark-mode-toggle img{
+  position: fixed;
+  left: -2px;
+  padding: 0;
+  border-radius: 6px;
+  border: none;
+  width: 38px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode{
+  background-color: #212529 ;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dark-mode, .text-white h2{
+  color: #fff ;
+}
+
+.dark-mode .about-text, .form-contact{
+  border: solid 4px #535353 ;
+  color: #fff ;
+}
+
+
+
+/* .dark-mode-toggle:focus {
+  outline: none;
+} */
+
 /* /////////////////////////////////////////// ACERCA DE MI ////////////////////////// */
 
 .about-container{
@@ -144,6 +179,7 @@ body{
   font-family: "Press Start 2P", serif;
   font-size: 1.3rem;
   animation: glitch 0.5s infinite;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .about-container p{
@@ -224,6 +260,7 @@ body{
   font-family: "Press Start 2P", serif;
   font-size: 1.3rem;
   animation: glitch 0.5s infinite;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .icon-wrapper {
@@ -248,6 +285,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
 .projects-container p{
@@ -272,6 +310,7 @@ body{
   font-size: 1.3rem;
   font-family: "Press Start 2P", serif;
   animation: glitch 0.5s infinite;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .project-carousel .carousel-item img { 
@@ -292,6 +331,7 @@ body{
   font-size: 1.3rem;
   font-family: "Press Start 2P", serif;
   animation: glitch 0.5s infinite;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .form-contact{
@@ -430,6 +470,10 @@ body{
     gap: 20px;
   }
 
+  .about-text{
+    max-width: 90% !important;
+  }
+
   .pixel-container{
     max-height: 400;
   }
@@ -451,8 +495,8 @@ body{
     font-size: 0.9rem; 
   }
   
-  .about-container, .skills-container, .projects-container 
-    { padding: 10px; 
+  .about-container, .skills-container, .projects-container { 
+    padding: 10px; 
   } 
   
 /* ///////////////////////////////MORE ABOUT//////////////////////////////////// */
