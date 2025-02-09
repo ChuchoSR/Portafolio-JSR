@@ -78,7 +78,7 @@ body{
 }
 
 .navbar-container .link:hover {
-  color: #4f43ae !important;
+  color: #4c5246 !important;
   cursor: pointer;
   text-shadow: 0 0 5px #fff, 0 0 10px #0ff;
   animation: glitch 0.3s infinite;
@@ -179,7 +179,7 @@ body{
   font-family: "Press Start 2P", serif;
   font-size: 1.3rem;
   animation: glitch 0.5s infinite;
-  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 1px rgba(65, 64, 64, 0.5);
 }
 
 .about-container p{
@@ -260,7 +260,7 @@ body{
   font-family: "Press Start 2P", serif;
   font-size: 1.3rem;
   animation: glitch 0.5s infinite;
-  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 1px rgba(65, 64, 64, 0.5);
 }
 
 .icon-wrapper {
@@ -310,7 +310,7 @@ body{
   font-size: 1.3rem;
   font-family: "Press Start 2P", serif;
   animation: glitch 0.5s infinite;
-  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .project-carousel .carousel-item img { 
@@ -331,7 +331,7 @@ body{
   font-size: 1.3rem;
   font-family: "Press Start 2P", serif;
   animation: glitch 0.5s infinite;
-  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 1px rgba(65, 64, 64, 0.5);
 }
 
 .form-contact{
