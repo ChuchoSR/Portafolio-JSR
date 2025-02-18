@@ -27,6 +27,16 @@ body{
   padding: 0;
 }
 
+link[rel="icon"] {
+  width: 32px;
+  height: 32px;
+}
+
+h2{
+  text-shadow: none !important;
+}
+
+
 
 /* /////////////////////////////////////////////////////BARRA DE NAVEGACION /////////////////////////////////// */
 
